@@ -20,6 +20,13 @@ var sumOfNums = function(numsArray){
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
   // Your Code Here
+  var results = [];
+  for (var i =0; i < numsArray.length; i++){
+    if (numsArray[i] > 10) {
+      results.push(numsArray[i]);
+    }
+  }
+  return results;
 };
 
 // #3
