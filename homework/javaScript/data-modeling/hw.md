@@ -60,13 +60,34 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+const tasks = {
+  name: 'New years Resolution'
+  completed: true,
+  completionTime: #mins,
+}
+
+const project = {
+  buildingBlock: "javaScript";
+  layout: [create HTML page, create CSS page, create JavaScript page, write the objective of the app, create input fields for user, set task deadlines]
+
+}
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+> Users will be uploading pictures to their account so they will need an individual account where there pictures are stored into albums.
+
+const account = {
+  username: 'fluffy',
+  password: '****',
+  email: '....@gmail.com'
+};
+
+const albums = {
+  name: 'album name',
+  photos: img sources,
+}
 
 ### 3. Home Automation Manager
 
@@ -75,7 +96,17 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+> This app will need a nav bar for all the things it can manage. It will also need to learn the habits of the user to be self sufficient.
+
+const lights{
+   motion: on/off,
+   timer: "length of time light stays on without movement',
+}
+
+const temp{
+  desired: "desired temp for when user is home",
+  away: 'desired temp for when user is away',
+}
 
 ### 4. Sneaker Store
 
@@ -83,7 +114,17 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+> This app will need a log of what is in stock and price. It will also need a checkout menu.
+
+const merch {
+  brands: "list specific brands available',
+  price: "100"
+}
+
+const checkout {
+  items: nike 'Model' & Asics 'model,
+  total: $200,
+}
 
 ## Representing Abstractions in Code
 
@@ -139,7 +180,12 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+>Disadvantages: 
+  No time data. It could be usefull to know the time the user will reach each stop. This will also let them know when to arrive at their desired Station for departure.
+
+>Advantages:
+  Users will know what there station looks like.
+
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +288,13 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+> #1 
+    - There is no easy patient variable. To look at a patients information you either have to look up the doctor or look into appointments.
+    - This option is better for the Doctor because doctors can easily find their patients.
+  #2
+    - Front desk employees can easily find patient information and so can the Doctors since patients have there own object variable. 
+    -Disadvantage: To find an appointment for the patient or doctor you'd have to go to appointments and click through all the appointments until you find the doctor or patient you're looking for. 
+
 
 ## Tying It Together
 
@@ -253,13 +305,39 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  Player:
+    - Username
+    - Profile Pic
+
+  Input:
+    - X player
+    - O player
+  
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+ const user{
+    username: 'joe121',
+    profilePic: img src,
+  }
+
+  const xPlayer{
+    token: 'X',
+  } 
+
+  const oPlayer{
+    token: 'O',
+  }
+
+  const exampleGame{
+    win: 'user get 3 in a row',
+    tie: no more available spaces,
+    else(
+      console.log('Game Over')
+    )
+  }
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+  > The user will need a profile to create a username. This will allow her to play with/find friends that also have the app. Each player will need to be assigned a game token...either 'X' or 'O'. The game will need input to know when someone has won or if there is a draw. An else statement will be needed for the losing to show that he/she has not won or tied...but lost. 
