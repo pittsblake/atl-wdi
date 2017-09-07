@@ -26,8 +26,9 @@ var timerUI = {
     }
     else{
       document.getElementsByClassName('crawler')[0].style.marginTop = 0 + 'px';
-      
+        
     }
+    
     
   }
 };
