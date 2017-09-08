@@ -22,13 +22,18 @@ window.onload = function() {
   var ring3 = document.querySelector('.ring-3');
 
   body.addEventListener('click', bullseyeGame.miss);
-  ring1.addEventListener('click', bullseyeGame.outerRing)
+  ring1.addEventListener('click', bullseyeGame.outerRing);
+  ring2.addEventListener('click',bullseyeGame.innerRing);
+  ring3.addEventListener('click', bullseyeGame.centerRing);
 }
 
 
 var bullseyeGame = {
   score: 0,
 
+  //This function grabs the Score from our HTML doc.
+    //it then grabs the score variable of 0 
+    //Adds it to the points parameter.
   updateScore: function(points) {
     var scoreElement = document.querySelector('.score');
     this.score += points
@@ -47,5 +52,21 @@ var bullseyeGame = {
   outerRing: function(event) {
     event.stopPropagation();
     alert('outerRing was clicked')
+
+    bullseyeGame.updateScore(10);
+  },
+
+  innerRing: function(event) {
+    event.stopPropagation();
+    alert('innerRing was clicked')
+
+    bullseyeGame.updateScore(50);
+  },
+
+  centerRing: function(event) {
+    event.stopPropagation();
+    alert('centerRing was clicked')
+
+    bullseyeGame.updateScore(100);
   }
 }
