@@ -5,37 +5,62 @@
 
 ### The 6 highest-starred npm packages are:
 
-# Library 1 Name
+# 1 Lodash
 
 ### Description:
-brief brief description here
+    Lodash makes working with JS arrays, numbers, objects, strings, etc easier. It is great for iterating arrays.
 
-### Total Downloads last month:
+### Total Downloads last month: 
+41,940,296
 
-# Library 2 Name
 
-### Description:
-brief description here
 
-### Total Downloads last month:
-
-# Library 3 Name
+#  2 Request
 
 ### Description:
-brief description here
+    It is the simplest way to make http calls.
 
-### Total Downloads last month:
+### Total Downloads last month: 
+22,450,512
 
-# Library 4 Name
 
-### Description:
-brief description here
 
-### Total Downloads last month:
 
-# Library 5 Name
+# 3 Async
 
 ### Description:
-brief description here
+    Provides functions for working with asynchronous JS.
+
+### Total Downloads last month: 
+44,789,806 
+
+
+
+# 4 Chalk
+
+### Description:
+    Terminal string styling.
+
+### Total Downloads last month: 
+31,744,880
+
+
+
+
+# 5 Express
+
+### Description:
+    light weight framework. Helps manage routes and requests.
+
+### Total Downloads last month: 
+14,187,532
+
+
+
+# 6 Bluebird
+
+### Description:
+    A promise library that provides innovative features and perfmormance. 
 
 ### Total Downloads last month:
+17,076,555
