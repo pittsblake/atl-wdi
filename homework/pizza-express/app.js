@@ -1,23 +1,16 @@
 const express = require ('express');
 const app = express();
 const hbs = require('hbs');
+const toppingsController = require('./controller/toppings.js');
+const orderController = require('./controller/order.js');
+const indexController = require('./controller/index.js');
 
 app.set("view engine", "hbs");
-app.use(express.static(__dirname + '/public'));
+app.set('views', './views');
 
-app.get('/', (req, res) => {
-    res.send('Welcome to Pizza Express');
-});
-
-app.get('/topping/:type', (req, res) => {  
-    res.send(`${req.params.type} pizza!`);
-});
-
-app.get('/order/:amount/:size', (req, res) => {
-    res.send(`${req.params.amount} and ${req.params.size} on it's way!`);
-});
-
-
+app.use('/toppings', toppingsController);
+app.use('/order', orderController);
+app.use('/', indexController);
 
 const PORT = 3002;
 app.listen(PORT, () => {
