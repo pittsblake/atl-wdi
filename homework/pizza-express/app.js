@@ -11,6 +11,7 @@ app.set('views', './views');
 app.use('/toppings', toppingsController);
 app.use('/order', orderController);
 app.use('/', indexController);
+app.use(express.static(__dirname + "/public"));
 
 const PORT = 3002;
 app.listen(PORT, () => {
