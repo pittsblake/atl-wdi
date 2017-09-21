@@ -3,7 +3,6 @@
 //===========================
 var express = require("express");
 var app = express();
-var logger = require("morgan");
 var bodyParser = require("body-parser");
 var hbs = require('hbs');
 
@@ -11,8 +10,6 @@ var hbs = require('hbs');
 //===========================
 // MIDDLEWARE
 //===========================
-//this is for morgan
-app.use(logger("dev"));
 //these are for bodyParser
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());

@@ -1,0 +1,15 @@
+<h1>Edit {{todont.description}}</h1>
+
+<div class="row">
+    <form action="/todonts/{{todont.id}}?_method=PUT" method="POST">
+        <label for="description">Description:</label>
+        <input type="text" name="description" value="{{todont.description}}">
+      <div class="form-group">
+          <label for="urgent">Urgent:</label>
+          <input type="text" name="urgent" value="{{todont.urgent}}">
+      </div>
+      <div>
+          <input type="submit" value="Update ToDont">
+      </div>
+    </form>
+</div>
