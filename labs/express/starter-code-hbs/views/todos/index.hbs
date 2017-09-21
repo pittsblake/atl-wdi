@@ -1,8 +1,9 @@
 <h1> Todos </h1>
 <ul>
   {{#each todos}}
-    <li>Description: {{description}}</li>
-    <li>Urgent: {{urgent}}</li>
+    <li>Description: {{this.description}}</li>
+    <li>Urgent: {{this.urgent}}</li>
     <br>
   {{/each}}
 </ul>
+

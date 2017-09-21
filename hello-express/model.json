@@ -1,0 +1,22 @@
+{
+    //User Data Type
+    "name": "string",
+    "profile_pic": "sting",
+    "age": "number",
+    "createdSurveys": [
+        {
+            //Survey data type
+            "title": "string",
+            "quesitons": [
+                {
+                    //Questions
+                    "question": [{}],
+                    "answers": [{}],
+                }
+            ]
+            
+        }
+    ]
+}
+
+User.createdSurveys[0].questions[0].question

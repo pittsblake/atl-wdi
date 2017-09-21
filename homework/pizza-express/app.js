@@ -15,7 +15,7 @@ app.use(express.static(__dirname + "/public"));
 
 const PORT = 3002;
 app.listen(PORT, () => {
-    console.log("==================================");
-    console.log("Express is listening on port", PORT);
-    console.log('==================================');
+    console.log("=======================");
+    console.log("LISTENING ON PORT", PORT);
+    console.log('=======================');
 });
