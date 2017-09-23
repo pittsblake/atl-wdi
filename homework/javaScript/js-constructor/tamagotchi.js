@@ -1,3 +1,4 @@
+
 console.log('tamagotchi file is loaded');
 
 //your class declaration here
@@ -32,8 +33,16 @@ const tamaOne = new Tamagotchi("Tammy", "skittle");
 const tamaTwo = new Tamagotchi("Tommy", "owl");
 const tamaThree = new Tamagotchi("Dopey", "lizard");
 
+//test out your Tamagotchies below via console.logs
 tamaOne.cry();
 tamaTwo.cry();
 tamaThree.yawn();
 tamaOne.puke();
-//test out your Tamagotchies below via console.logs
+
+
+module.exports = {
+    Tamagotchi,
+    tamaOne,
+    tamaTwo,
+    tamaThree
+};
