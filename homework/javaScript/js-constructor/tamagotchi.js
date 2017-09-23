@@ -9,6 +9,7 @@ class Tamagotchi {
         this.health = 10;
         this.name = name;
         this.creatureType = creatureType;
+
     }
 
     cry(){
@@ -26,23 +27,45 @@ class Tamagotchi {
         this.restedness -- ;
         console.log(`${this.name} has a current restedness of ${this.restedness}`)
     }
+
+    start(){
+        var self = this;
+        this.hungerTimer = setInterval( () => {
+            self.cry();
+        }, 6000);
+
+        this.yawnTimer = setInterval(() => {
+            self.yawn();
+        }, 10000);
+
+        this.sickTimer = setInterval(() => {
+            self.puke();
+        }, 20000);
+    }
+
+    stop() {
+        clearInterval(this.hungerTimer);
+        clearInterval(this.yawnTimer);
+        clearInterval(this.sickTimer);
+    }
 }
 
 //create new Tamagotchis
-const tamaOne = new Tamagotchi("Tammy", "skittle");
-const tamaTwo = new Tamagotchi("Tommy", "owl");
-const tamaThree = new Tamagotchi("Dopey", "lizard");
+const tammy = new Tamagotchi("Tammy", "skittle");
+const tommy = new Tamagotchi("Tommy", "owl");
+const dopey = new Tamagotchi("Dopey", "lizard");
 
 //test out your Tamagotchies below via console.logs
-tamaOne.cry();
-tamaTwo.cry();
-tamaThree.yawn();
-tamaOne.puke();
+//tamaTwo.cry();
+//tamaOne.cry();
+//tamaThree.yawn();
+//tamaOne.puke();
+tammy.start();
 
 
 module.exports = {
     Tamagotchi,
-    tamaOne,
-    tamaTwo,
-    tamaThree
+    tammy,
+    tommy,
+    dopey
 };
