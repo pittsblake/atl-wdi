@@ -7,6 +7,9 @@ var router = express.Router();
 var mongoose = require("mongoose");
 var Donut = require("../models/donuts.js");
 
+//mongoose.connect('mongodb://localhost/donut_store');
+
+//const db = mongoos.connection;
 
 router.get('/donuts', function(req, res) {
 
