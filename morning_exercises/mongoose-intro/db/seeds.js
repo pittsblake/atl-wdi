@@ -1,5 +1,3 @@
-// seeds.js
-
 var mongoose = require('mongoose');
 var Schema = require("./schema.js");
 
@@ -30,9 +28,9 @@ ProjectModel.remove({}, function (err) {
 });
 
 // Now, we will generate instances of a Student and of their Project.
-var becky = new StudentModel({ name: "Becky", age: 29});
-var brandon = new StudentModel({ name: "Brandon", age: 29});
-var steve = new StudentModel({ name: "Steve", age: 29});
+var becky = new StudentModel({ name: "Becky", age: 29 });
+var brandon = new StudentModel({ name: "Brandon", age: 29 });
+var steve = new StudentModel({ name: "Steve", age: 29 });
 
 var project1 = new ProjectModel({ title: "Project 1!!", unit: "JS" });
 var project2 = new ProjectModel({ title: "Project 2!!", unit: "Express" });
@@ -58,4 +56,3 @@ students.forEach(function (student, i) {
 });
 
 // Disconnect from database
-db.close();
