@@ -12,7 +12,7 @@ const DonutSchema = new Schema({
     qty: Number
 });
 
-const DonutModel = mongoose.model('Donut', DonutSchema);
+const DonutModel = mongoose.model('Donuts', DonutSchema);
 //export your donut with module.exports()
 module.exports = {
     DonutModel: DonutModel
