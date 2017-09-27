@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const hbs = require("hbs");
-//const logger = require('morgan');
+const logger = require('morgan');
 
 
 //======================
@@ -23,7 +23,12 @@ app.set("view engine", "hbs");
 app.set('views', './views');
 
 app.use(express.static(__dirname + 'public'));
-//app.use( logger('dev'));
+app.use( logger('dev'));
+
+
+//app.get('/', (req, res) => {
+  //  res.redirect('/donuts')
+//})
 
 //======================
 // CONTROLLERS
@@ -35,6 +40,7 @@ app.use('/seed', seedController);
 //for root directory, show all donuts
 var donutsController = require('./controllers/donuts.js');
 app.use('/', donutsController);
+
 
 //======================
 // LISTENERS
