@@ -42,7 +42,7 @@ router.get('/donuts', function(req, res) {
 	];
 
 
-  Donut.DonutModel.create(newDonuts, function(err) {
+  Donut.create(newDonuts, function(err) {
         console.log("SEED: NEW PRODUCTS CREATED!");
         res.redirect('/');
   });

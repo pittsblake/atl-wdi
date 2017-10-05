@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/students');
 
 app.set('view engine', 'hbs')
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 app.get('/', (request, response) => {
