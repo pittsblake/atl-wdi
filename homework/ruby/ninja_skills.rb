@@ -66,21 +66,36 @@
 
 
 
-# def program (num)
-#     puts "Enter a number"
-#     @input = gets.chomp.to_i * 2
-#     puts "your entry multiplied by 2: #{@input}"
+# # def program (num)
+# #     puts "Enter a number"
+# #     @input = gets.chomp.to_i * 2
+# #     puts "your entry multiplied by 2: #{@input}"
+# # end
+
+# # program(2)
+
+
+# def another_program 
+#     puts "What is your name?"
+#     a = gets.chomp
+#     puts " What do you like to do"
+#     b = gets.chomp
+#     print "#{a}  #{b} "
 # end
 
-# program(2)
+# another_program()
+
+# :dart: Commit -m "5. Input/Output Skills"
 
 
-def another_program 
-    puts "What is your name?"
-    a = gets.chomp
-    puts " What do you like to do"
-    b = gets.chomp
-    print "#{a}  #{b} "
-end
 
-another_program()
+
+# my_first_array = ["this 1", 10, "this 2", 20, "this 3", 30,  "this 4", 40, "this 5", ] 
+
+# # puts my_first_array.last
+# # puts my_first_array.insert(1, "Joe")
+# # puts my_first_array.insert(2, 3) 
+# #puts my_first_array.push(true)
+# puts my_first_array[3]
+
+# :dart: Commit -m "6. Arrays skills"
