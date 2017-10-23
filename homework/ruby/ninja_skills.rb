@@ -50,13 +50,37 @@
 
 
 
-christine = "Hi, I'm Christine"
-likes_to = "long walks on the beach, kinda"
-puts "#{christine} and I like  #{likes_to}"
-g = "2"
-go_to_number = 2
-puts g + go_to_number
+# christine = "Hi, I'm Christine"
+# likes_to = "long walks on the beach, kinda"
+# puts "#{christine} and I like  #{likes_to}"
+# g = "2"
+# go_to_number = 2
+# puts g + go_to_number
 
-## This could be fixed by converting the string to an integer 
+# ## This could be fixed by converting the string to an integer 
 
-:dart: Commit -m "4. String Skills"
+# :dart: Commit -m "4. String Skills"
+
+
+
+
+
+
+# def program (num)
+#     puts "Enter a number"
+#     @input = gets.chomp.to_i * 2
+#     puts "your entry multiplied by 2: #{@input}"
+# end
+
+# program(2)
+
+
+def another_program 
+    puts "What is your name?"
+    a = gets.chomp
+    puts " What do you like to do"
+    b = gets.chomp
+    print "#{a}  #{b} "
+end
+
+another_program()
