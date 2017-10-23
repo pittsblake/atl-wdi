@@ -121,3 +121,32 @@
 
 # :dart: Commit -m "7. Hashes skills"
 
+
+
+
+
+first_range = (1..10).to_a
+
+second_range = (1..999).to_a
+
+# first_range.each do |num|
+#     newNum = num.to_s
+#     puts newNum
+#     puts newNum.class
+# end
+
+# x = 0
+
+# while x < 49 do
+#     puts second_range[x]
+#     x += 1
+# end
+
+
+first_range.map do |new_array|
+    if new_array % 2 == 0
+        puts new_array.to_s
+    end
+end
+
+:dart: Commit -m "8. I'm a Ninja Warrior. Bow down to me."
