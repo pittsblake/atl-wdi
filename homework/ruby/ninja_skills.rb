@@ -23,10 +23,20 @@
 # # :dart Commit -m "1. Boolean Skills"
 
 
-# @x == nil
-#  print @x
-# puts "#{@x} was here"
-#     print @x
-# puts @x.class
+# x == nil
+#  print x
+# puts "#{x} was here"
+#     print x
+# puts x.class
 
 # :dart: Commit -m "2. Nil SKills"
+
+
+d = 2
+puts d
+e = 4.0
+puts e
+d = e 
+puts d
+
+:dart: Commit -m "3. Integer Skills"
