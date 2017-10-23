@@ -90,6 +90,8 @@
 
 
 
+
+
 # my_first_array = ["this 1", 10, "this 2", 20, "this 3", 30,  "this 4", 40, "this 5", ] 
 
 # # puts my_first_array.last
@@ -99,3 +101,23 @@
 # puts my_first_array[3]
 
 # :dart: Commit -m "6. Arrays skills"
+
+
+
+# my_favorite_animals = {
+#     Rob: "lab",
+#     Tiny: "tiger",
+#     Ginger: "fox",
+#     buffy: "penguin",
+#     Edgar: "donkey"
+# }
+
+# #puts my_favorite_animals[:Edgar] = "bear"
+
+# my_favorite_movie = {}
+
+# my_favorite_movie[:new] = "Home Alone"
+# puts my_favorite_movie
+
+# :dart: Commit -m "7. Hashes skills"
+
