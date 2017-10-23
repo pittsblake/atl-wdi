@@ -125,9 +125,9 @@
 
 
 
-first_range = (1..10).to_a
+# first_range = (1..10).to_a
 
-second_range = (1..999).to_a
+# second_range = (1..999).to_a
 
 # first_range.each do |num|
 #     newNum = num.to_s
@@ -143,10 +143,31 @@ second_range = (1..999).to_a
 # end
 
 
-first_range.map do |new_array|
-    if new_array % 2 == 0
-        puts new_array.to_s
-    end
-end
+# first_range.map do |new_array|
+#     if new_array % 2 == 0
+#         puts new_array.to_s
+#     end
+# end
 
-:dart: Commit -m "8. I'm a Ninja Warrior. Bow down to me."
+# :dart: Commit -m "8. I'm a Ninja Warrior. Bow down to me."
+
+
+
+
+
+
+new_range = (1..1000).to_a
+add = 0
+    new_range.each do |num|
+        if num % 3 == 0 || num % 5 == 0
+             add += num
+        end
+    end
+p add
+
+
+:dart commit -m "9. sum of natural nums"
+
+
+
+
