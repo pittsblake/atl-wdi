@@ -156,17 +156,20 @@
 
 
 
-new_range = (1..1000).to_a
-add = 0
-    new_range.each do |num|
-        if num % 3 == 0 || num % 5 == 0
-             add += num
-        end
-    end
-p add
+# new_range = (1..1000).to_a
+# add = 0
+#     new_range.each do |num|
+#         if num % 3 == 0 || num % 5 == 0
+#              add += num
+#         end
+#     end
+# p add
 
 
-:dart commit -m "9. sum of natural nums"
+# :dart commit -m "9. sum of natural nums"
+
+
+
 
 
 

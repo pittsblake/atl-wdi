@@ -6,6 +6,7 @@ import example from './omdbExample.json';
 import axios from 'axios';
 
 class App extends Component {
+<<<<<<< HEAD
   constructor(){
     super();
     this.state = {
@@ -42,6 +43,18 @@ class App extends Component {
   searchById = (event) => {
     event.preventDefault()
     const id = event.target.id.value
+=======
+  state = {
+    movie: example
+  }
+
+  //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
+  searchByTitle = () => {
+    console.log("Search by Title");
+  }
+
+  searchById = () => {
+>>>>>>> c569e4649a1376002a16d79743c367fd0e7e438f
     console.log("Search by ID");
 
     axios.get(`http://www.omdbapi.com/?apikey=d31f1a94&i=${id}`)
@@ -64,7 +77,7 @@ class App extends Component {
 
   }
 
-  //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.
+  //Pass searchByTitle, searchById, and this.state.movie to it's appropriate child components.
   render() {
     return (
       <div className="App">
